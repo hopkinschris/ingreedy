@@ -1,9 +1,27 @@
 :units:
+  :bulb:
+    - "bulb"
+    - "bulbs"
+  :bunch:
+    - "bunch"
+    - "bunches"
+  :can:
+    - "cans"
+    - "can"
+  :clove:
+    - "cloves"
+    - "clove"
   :cup:
     - "cups"
     - "cup"
     - "c."
     - "c"
+  :dash:
+    - "dash"
+    - "dashes"
+  :ear:
+    - "ear"
+    - "ears"
   :fluid_ounce:
     - "fl. oz."
     - "fl oz"
@@ -14,44 +32,6 @@
     - "gal."
     - "gallon"
     - "gallons"
-  :ounce:
-    - "oz"
-    - "oz."
-    - "ounce"
-    - "ounces"
-  :pint:
-    - "pt"
-    - "pt."
-    - "pint"
-    - "pints"
-  :pound:
-    - "lb"
-    - "lb."
-    - "pound"
-    - "pounds"
-  :quart:
-    - "qt"
-    - "qt."
-    - "qts"
-    - "qts."
-    - "quart"
-    - "quarts"
-  :tablespoon:
-    - "tbsp."
-    - "tbsp"
-    - "T"
-    - "T."
-    - "tablespoon"
-    - "tablespoons"
-    - "tbs."
-    - "tbs"
-  :teaspoon:
-    - "tsp."
-    - "tsp"
-    - "t"
-    - "t."
-    - "teaspoon"
-    - "teaspoons"
   :gram:
     - "g"
     - "g."
@@ -61,6 +41,12 @@
     - "grams"
     - "gramme"
     - "grammes"
+  :handful:
+    - "handful"
+    - "handfuls"
+  :head:
+    - "head"
+    - "heads"
   :kilogram:
     - "kg"
     - "kg."
@@ -89,27 +75,70 @@
     - "milliliters"
     - "millilitre"
     - "millilitres"
+  :ounce:
+    - "oz"
+    - "oz."
+    - "ounce"
+    - "ounces"
+  :package:
+    - "package"
+    - "packages"
+  :piece:
+    - "piece"
+    - "pieces"
   :pinch:
     - "pinch"
     - "pinches"
-  :dash:
-    - "dash"
-    - "dashes"
-  :touch:
-    - "touch"
-    - "touches"
-  :handful:
-    - "handful"
-    - "handfuls"
+  :pint:
+    - "pt"
+    - "pt."
+    - "pint"
+    - "pints"
+  :pound:
+    - "lb"
+    - "lb."
+    - "lbs"
+    - "lbs."
+    - "pound"
+    - "pounds"
+  :quart:
+    - "qt"
+    - "qt."
+    - "qts"
+    - "qts."
+    - "quart"
+    - "quarts"
+  :serving:
+    - "serving"
+    - "servings"
+  :slice:
+    - "slice"
+    - "slices"
+  :stalk:
+    - "stalk"
+    - "stalks"
   :stick:
     - "stick"
     - "sticks"
-  :clove:
-    - "cloves"
-    - "clove"
-  :can:
-    - "cans"
-    - "can"
+  :tablespoon:
+    - "tbsp."
+    - "tbsp"
+    - "T"
+    - "T."
+    - "tablespoon"
+    - "tablespoons"
+    - "tbs."
+    - "tbs"
+  :teaspoon:
+    - "tsp."
+    - "tsp"
+    - "t"
+    - "t."
+    - "teaspoon"
+    - "teaspoons"
+  :touch:
+    - "touch"
+    - "touches"
   :to_taste:
     - "to taste"
 :numbers:
@@ -143,5 +172,3 @@
   seventy: 70
   eighty: 80
   ninety: 90
-:prepositions:
-  - "of"

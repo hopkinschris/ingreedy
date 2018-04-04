@@ -9,7 +9,7 @@ module Ingreedy
     end
 
     rule(:range_separator) do
-      str("-") | str("~")
+      str("to") | str("-") | str("~")
     end
 
     rule(:amount) do
@@ -70,6 +70,7 @@ module Ingreedy
     rule(:amount_and_unit) do
       (range | amount) >>
         whitespace.maybe >>
+        container_size.maybe >>
         unit_and_preposition.maybe >>
         container_size.maybe
     end
@@ -90,8 +91,13 @@ module Ingreedy
         quantity
     end
 
+    rule(:no_quantity) do
+      # e.g. salt and pepper
+      ((whitespace >> quantity).absent? >> any).repeat.as(:ingredient)
+    end
+
     rule(:ingredient_addition) do
-      standard_format | reverse_format
+      standard_format | reverse_format | no_quantity
     end
 
     root :ingredient_addition

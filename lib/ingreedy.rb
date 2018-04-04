@@ -5,17 +5,17 @@ require File.join(path, "ingreedy_parser")
 require File.join(path, "dictionary_collection")
 
 module Ingreedy
+  class EmptyAmount < Parslet::ParseFailed; end
+  class IncorrectIngredient < Parslet::ParseFailed; end
   ParseFailed = Class.new(StandardError)
 
   class << self
-    attr_accessor :locale, :preserve_amounts
+    attr_accessor :locale, :preserve_amounts, :after_error
   end
 
   def self.parse(query)
     parser = Parser.new(query)
     parser.parse
-  rescue Parslet::ParseFailed => e
-    fail ParseFailed.new(e.message), e.backtrace
   end
 
   def self.dictionaries

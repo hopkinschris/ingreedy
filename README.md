@@ -1,4 +1,8 @@
-# Usage
+# Ingreedy [![Gem Version](https://badge.fury.io/rb/ingreedy.svg)](http://badge.fury.io/rb/ingreedy)
+
+#### Natural language processing library for recipe ingredients.
+
+## Usage
 
 ```ruby
 result = Ingreedy.parse('1 lb. potatoes')
@@ -10,13 +14,13 @@ print result.ingredient
   #=> "potatoes"
 ```
 
-### I18n and custom dictionaries
+### I18n and Custom Dictionaries
 
 ```ruby
-Ingreedy.dictionaries[:fr] = { 
-  units: { dash: ['pincée'] }, 
-  numbers: { 'une' => 1 }, 
-  prepositions: ['de'] 
+Ingreedy.dictionaries[:fr] = {
+  units: { dash: ['pincée'] },
+  numbers: { 'une' => 1 },
+  prepositions: ['de']
 }
 
 Ingreedy.locale = :fr # Also automatically follows I18n.locale if available
@@ -30,7 +34,7 @@ print result.ingredient
   #=> "sucre"
 ```
 
-### Handling amounts
+### Handling Amounts
 
 By default, Ingreedy will convert all amounts to a rational number:
 
@@ -51,17 +55,17 @@ print result.amount
   #=> 1 1/2
 ```
 
-[Live demo](http://hangryingreedytest.herokuapp.com/)
-
-# Pieces of Flair
-- [![Gem Version](https://badge.fury.io/rb/ingreedy.svg)](http://badge.fury.io/rb/ingreedy)
-- [![Build Status](https://secure.travis-ci.org/iancanderson/ingreedy.svg?branch=master)](http://travis-ci.org/iancanderson/ingreedy)
-- [![Code Climate](https://codeclimate.com/github/iancanderson/ingreedy.svg)](https://codeclimate.com/github/iancanderson/ingreedy)
-- [![Coverage Status](https://coveralls.io/repos/iancanderson/ingreedy/badge.svg)](https://coveralls.io/r/iancanderson/ingreedy)
-
-# Development
+## Development
 
 Run the tests:
+
 ```
 rspec spec
 ```
+
+## Authors
+
+Ian C. Anderson
+
+- [http://twitter.com/iancanderson](http://twitter.com/iancanderson)
+- [http://github.com/iancanderson](http://github.com/iancanderson)
