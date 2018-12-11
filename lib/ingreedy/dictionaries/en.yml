@@ -25,6 +25,7 @@
   :fluid_ounce:
     - "fl. oz."
     - "fl oz"
+    - "fl ozs"
     - "fluid ounce"
     - "fluid ounces"
   :gallon:
@@ -77,6 +78,7 @@
     - "millilitres"
   :ounce:
     - "oz"
+    - "ozs"
     - "oz."
     - "ounce"
     - "ounces"
@@ -123,6 +125,7 @@
   :tablespoon:
     - "tbsp."
     - "tbsp"
+    - "tbsps"
     - "T"
     - "T."
     - "tablespoon"
@@ -132,6 +135,7 @@
   :teaspoon:
     - "tsp."
     - "tsp"
+    - "tsps"
     - "t"
     - "t."
     - "teaspoon"
