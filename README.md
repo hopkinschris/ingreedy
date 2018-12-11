@@ -1,4 +1,4 @@
-# Ingreedy [![Gem Version](https://badge.fury.io/rb/ingreedy.svg)](http://badge.fury.io/rb/ingreedy)
+# Ingreedy
 
 #### Natural language processing library for recipe ingredients.
 
@@ -62,10 +62,3 @@ Run the tests:
 ```
 rspec spec
 ```
-
-## Authors
-
-Ian C. Anderson
-
-- [http://twitter.com/iancanderson](http://twitter.com/iancanderson)
-- [http://github.com/iancanderson](http://github.com/iancanderson)
